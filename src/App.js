@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { FunctionalComponent } from './components/FunctionalComponents'; // you have to use that, if you use `export` tag by the direct function in the relevant component
+import { ClassComponent } from './components/ClassComponents'
+import JsxComponent from './components/JsxComponents'
+import Props from './components/Props'
+import State from './components/State'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <JsxComponent/>
+     <FunctionalComponent/>
+     <ClassComponent name='prop cumali'/>
+     <Props  name='prop kemal' >
+        <p style={{color:"red"}}>this is a children prop</p>
+         <button>Action</button>
+      </Props>
+
+      <State/>
     </div>
   );
 }
