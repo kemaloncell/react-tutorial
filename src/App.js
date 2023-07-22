@@ -4,18 +4,38 @@ import { ClassComponent } from './components/ClassComponents'
 import JsxComponent from './components/JsxComponents'
 import Props from './components/Props'
 import State from './components/State'
+import SetStateCounter from  './components/SetStateCounter'
+import FunctionClick from "./components/FunchtionClick";
+import ClassClick from "./components/ClassClick";
+import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
 function App() {
   return (
     <div className="App">
-     <JsxComponent/>
-     <FunctionalComponent/>
-     <ClassComponent name='prop cumali'/>
-     <Props  name='prop kemal' >
-        <p style={{color:"red"}}>this is a children prop</p>
-         <button>Action</button>
-      </Props>
+        {/*
+            <JsxComponent/>
+            <FunctionalComponent/>
+            <ClassComponent name='prop cumali'/>
+            <hr/>
+            <Props  name='prop kemal' >
+            <p style={{color:"red"}}>this is a children prop</p>
+            <button>Action</button>
+            </Props>
+            <hr/>
+            <State/>
+            <hr/>
+            <SetStateCounter/>
+               <ClassClick/>
+        <hr></hr>
+        <FunctionClick/>
+        <hr></hr>
+        <hr></hr>
+        <EventBind/>
 
-      <State/>
+            */}
+
+        <ParentComponent/>
+
     </div>
   );
 }
