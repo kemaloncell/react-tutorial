@@ -9,6 +9,11 @@ import FunctionClick from "./components/FunchtionClick";
 import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
+import ConditionalRendering from "./components/ConditionalRendering";
+import ListRendering from "./components/ListRendering";
+import StyleSheet from "./components/StyleSheet";
+import './appStyles.css'
+import styles from './components/appStyle.module.css'
 function App() {
   return (
     <div className="App">
@@ -31,10 +36,14 @@ function App() {
         <hr></hr>
         <hr></hr>
         <EventBind/>
+        <ParentComponent/>
+              <ConditionalRendering/>
+                    <ListRendering/>
 
             */}
-
-        <ParentComponent/>
+        <StyleSheet primary={false}/>
+        <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>
 
     </div>
   );
