@@ -1,9 +1,11 @@
 import './App.css';
-import LifecycleA from "./components/LifecycleA";
+import React from 'react';
+import FragmentDemo from "./components/FragmentDemo";
+import TableFragmentExp from "./components/TableFragmentExp";
 function App() {
   return (
     <div className="App">
-         <LifecycleA/>
+         <TableFragmentExp/>
     </div>
   );
 }
