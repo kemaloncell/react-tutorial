@@ -1,11 +1,16 @@
 import './App.css';
 import React from 'react';
-import FragmentDemo from "./components/FragmentDemo";
-import TableFragmentExp from "./components/TableFragmentExp";
+import ErrorHandlingHero from "./components/ErrorHandlingHero";
+import ErrorBoundary from "./components/ErrorBoundary";
+
 function App() {
   return (
     <div className="App">
-         <TableFragmentExp/>
+            <ErrorBoundary>
+         <ErrorHandlingHero heroName='batman'/>
+         <ErrorHandlingHero heroName='spiderman'/>
+         <ErrorHandlingHero heroName='joker'/>
+            </ErrorBoundary>
     </div>
   );
 }
