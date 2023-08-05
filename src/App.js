@@ -1,16 +1,15 @@
 import './App.css';
 import React from 'react';
 import ErrorHandlingHero from "./components/ErrorHandlingHero";
-import ErrorBoundary from "./components/ErrorBoundary";
+import HigherOrderParentComp from "./components/HigherOrderParentComp";
+import RenderPropsClickCounter from "./components/RenderPropsClickCounter";
+import RenderPropsParentComp from "./components/RenderPropsParentComp";
+
 
 function App() {
   return (
     <div className="App">
-            <ErrorBoundary>
-         <ErrorHandlingHero heroName='batman'/>
-         <ErrorHandlingHero heroName='spiderman'/>
-         <ErrorHandlingHero heroName='joker'/>
-            </ErrorBoundary>
+         <RenderPropsParentComp/>
     </div>
   );
 }
