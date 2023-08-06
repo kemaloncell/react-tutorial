@@ -1,7 +1,7 @@
 import React, { Component, PureComponent } from 'react'
 import PureReqComp from "./PureReqComp";
 import PureComp from "./PureComp";
-import MemoComp from "./MemoComp";
+import MemoComp from "../Memo-Comp/MemoComp";
 
 class PureParentReqComp extends Component{
     constructor(props){
