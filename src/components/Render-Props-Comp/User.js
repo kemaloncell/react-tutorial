@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 
-class RenderPropsUser extends Component{
+class User extends Component{
     render(){
+  // 'render' is just a name it can be changed for example we can use cumali instead of render
         const { render } = this.props
         // simple example for render props
         return(
@@ -10,4 +11,4 @@ class RenderPropsUser extends Component{
     }
 }
 
-export default RenderPropsUser
+export default User

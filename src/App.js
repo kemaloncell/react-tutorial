@@ -1,18 +1,22 @@
 import './App.css';
 import React from 'react';
 import ErrorHandlingHero from "./components/Error-Handling/ErrorHandlingHero";
-import HigherOrderParentComp from "./components/Higher-Order-Comp/HigherOrderParentComp";
-import RenderPropsClickCounter from "./components/Render-Props-Comp/RenderPropsClickCounter";
-import RenderPropsParentComp from "./components/Render-Props-Comp/RenderPropsParentComp";
-import Parent from "./components/HTTP/Parent";
+import higherParent from "./components/Higher-Order-Comp/Parent";
+import RenderParent from "./components/Render-Props-Comp/Parent";
+import httpParent from "./components/HTTP/Parent";
+import ErrorParent from "./components/Error-Handling/Parent"
+import PureParentReqComp from "./components/Pure-Comp/PureParentReqComp"
+import MemoParent from "./components/Memo-Comp/MemoParent"
+import RefsDemo from "./components/Ref-Comp/exp1/RefsDemo"
+import FocusInput from "./components/Ref-Comp/exp2/FocusInput"
 
 
 function App() {
   return (
     <div className="App">
-         <Parent/>
+         <RenderParent/>
     </div>
-  );
+  )
 }
 
 export default App;

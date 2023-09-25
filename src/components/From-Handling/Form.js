@@ -51,7 +51,7 @@ class Form extends Component {
                 <br/><br/>
              <div>
                <label>Comments: </label>
-                <textarea   onChange={this.handleCommentsChange} />
+                <textarea onChange={this.handleCommentsChange} />
                 <label>message = {comments}</label>
             </div>
                 <br/><br/>

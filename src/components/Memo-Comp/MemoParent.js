@@ -1,6 +1,4 @@
-import React, { Component, PureComponent } from 'react'
-import PureReqComp from "./PureReqComp";
-import PureComp from "./PureComp";
+import React, { Component } from 'react'
 import MemoComp from "../Memo-Comp/MemoComp";
 
 class PureParentReqComp extends Component{
@@ -20,11 +18,9 @@ class PureParentReqComp extends Component{
     }
 
     render(){
-        console.log('**********PureParentReqComp**********')
         return(
             <div>
-              <PureReqComp name={this.state.name}></PureReqComp>
-               <PureComp name={this.state.name}></PureComp>
+                <MemoComp name={this.state.name}/>
             </div>
         )
     }

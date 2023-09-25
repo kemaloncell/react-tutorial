@@ -10,7 +10,7 @@ class Input extends  Component{
     focusInput = () => { // this method is called from FocusInput.js with ref
         this.inputRef.current.focus()
     }
-
+// we create attached a ref to the input so that we could be able to use the focus property
     render(){
         return(
             <div>

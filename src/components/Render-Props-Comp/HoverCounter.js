@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class RenderPropsHoverCounter extends Component {
+class HoverCounter extends Component {
 
 
     render(){
@@ -9,4 +9,4 @@ class RenderPropsHoverCounter extends Component {
     }
 }
 
-export default RenderPropsHoverCounter
+export default HoverCounter

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class RenderPropsCounter extends Component{
+class Counter extends Component{
     constructor(props){
         super(props)
 
@@ -16,7 +16,7 @@ class RenderPropsCounter extends Component{
     }
     // this component is not responsible for rendering anything, it is just responsible for maintaining the state and incrementing the counter
     render(){
-     //  const { render } = this.props you dont need this line because you are not destructuring the props
+     // we used this.props.children to we could be able to crate a dynamic structure
 
         return(
             <div>{this.props.children(this.state.count, this.incrementCounter)}</div>
@@ -24,4 +24,4 @@ class RenderPropsCounter extends Component{
     }
 }
 
-export default RenderPropsCounter
+export default Counter

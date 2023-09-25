@@ -12,7 +12,7 @@ class FocusInput extends Component{
     clickHandler = () => { // this method called the focusInput method in Input.js
         this.componentRef.current.focusInput()
     }
-
+// !! we used the ref to reach the focus where is in the child component
     render(){
         return(
             <div>

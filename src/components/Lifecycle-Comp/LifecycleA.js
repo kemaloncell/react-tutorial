@@ -45,7 +45,9 @@ class LifecycleA extends Component {
                 <button onClick={this.changeState}>Change state</button>
                 { /* normalde => constructor > getDerivedStateFromProps > componentDidMount > render >
                  child component mount edilmişse =>  constructor > getDerivedStateFromProps > render sonra child componetinde aynı işlemler > en son parent  componentin componentDidMount çalışır
-.                bu sayfadaki componentDidMount child component render olduktan sonra çalışacaktır  */}
+.                bu sayfadaki componentDidMount child component render olduktan sonra çalışacaktır
+                çünkü mantıken mount fonksiyonun render edeceği child hazır değildir onu bekler.
+                */}
                <LifecycleB/>
           </div>
        )

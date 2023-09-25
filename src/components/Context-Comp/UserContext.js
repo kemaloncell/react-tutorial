@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserContext = React.createContext('default-context-props '); // 1. create context and it may be default value
+const UserContext = React.createContext('default-kemal-ali-veli '); // 1. create context and it may be get like 'default-kemal-ali-veli' default value
 // and if you don't use provider, this default value will be used
 
 const UserProvider = UserContext.Provider // 2. create provider

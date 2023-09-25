@@ -10,4 +10,5 @@ function MemoComp({name}){
 }
 
 // if ı  use React.memo component its avoid the re-rendering
+// it's for functional components --- we can use pure component for only class component
 export default React.memo(MemoComp)
