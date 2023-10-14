@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import {CounterContext} from './UseParent'
 
 function ComponentF(){
-   const counterContext = useContext(CounterContext)
+   const counterContext = useContext(CounterContext) // call the useContenxt and give it a paramerters where is we defined the parent component 
  return(
     <div>
          Coponent F: {counterContext.CounterCount}  -----**********

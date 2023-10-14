@@ -1,13 +1,13 @@
 import React from "react";
 import CounterOne from "./CounterOne";
 import CounterThree from "./CounterThree";
-import UseParent from './useReducer-with-useContext/UseParent'
+import FetchParent from './Fetching-data-with-useReducer/FetchParent'
 
 
 function Parent(){
         return(
            <div>
-              <UseParent/>
+              <FetchParent/>
            </div>
         )
 }
