@@ -22,7 +22,7 @@ const withCounter = ( WrappedComponent, incrementCount ) => { // first we create
             return <WrappedComponent
                 count={this.state.count}
                 incrementCount={this.incrementCount2}
-                {...this.props} // !!!!!! this is here because we want to pass the props that we get from the Parent to the Click and Hover components . when you used the hoc and want to used props from the parent component you need to pass the props like this {...this.props
+                {...this.props} // !!!!!! this is here because we want to pass the props that we get from the ObjectUseState to the Click and Hover components . when you used the hoc and want to used props from the parent component you need to pass the props like this {...this.props
             /> // third we return the original component with the props we want to pass to it
         }
     }

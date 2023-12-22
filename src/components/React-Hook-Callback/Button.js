@@ -7,5 +7,5 @@ function Button({handleClick, children}){
     )
 }
 
-// React.memo(Button) eğer bunu yazmazsan 'Parent' fonksiyonun içindeki her komponent render olur istenmeyen durum
+// React.memo(Button) eğer bunu yazmazsan 'ObjectUseState' fonksiyonun içindeki her komponent render olur istenmeyen durum
 export default React.memo(Button)

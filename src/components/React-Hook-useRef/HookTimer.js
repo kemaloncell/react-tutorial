@@ -9,9 +9,11 @@ function HookTimer(){
         intervalRef.current = setInterval(() => {  // step 2 set setInterval to the interval.current
             setTimer(prevState => prevState + 1)
         },1000)
+
         return() => {  // step 3 clear interval with return which is useEffect second parameters it also same work with the componentWilUnmount
             clearInterval(intervalRef.current)
         }
+
     },[])
 
 // step 4 reach the clear the interval with intervalRef.current parameters

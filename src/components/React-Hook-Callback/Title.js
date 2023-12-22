@@ -5,5 +5,5 @@ function Title(){
         <div>callback title</div>
     )
 }
-// React.memo(Title) eğer bunu yazmazsan 'Parent' fonksiyonun içindeki her komponent render olur istenmeyen durum
+// React.memo(Title) eğer bunu yazmazsan 'ObjectUseState' fonksiyonun içindeki her komponent render olur istenmeyen durum
 export default React.memo(Title)
